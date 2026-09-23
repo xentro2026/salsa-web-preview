@@ -1,0 +1,182 @@
+/* ============================================================================
+   Salsa y Sabor — sistema de diseño "Geometría Fiesta"
+   Paleta real de marca (extraída de salsaysabor.de el 22-09-2026).
+   Todo se define por tokens: cambiar de plantilla = cambiar este archivo.
+   ========================================================================== */
+
+:root{
+  --red:#E11D2E;
+  --amber:#F59E0B;
+  --black:#0B0B0C;
+  --ink:#111111;
+  --cream:#F2EBE6;
+  --white:#ffffff;
+  --muted:#5B5450;
+  --line:rgba(17,17,17,.14);
+  --radius:16px;
+  --radius-lg:26px;
+  --shadow-hard:8px 8px 0 var(--red);
+  --shadow-soft:0 16px 36px rgba(17,17,17,.10);
+  --font-base:ui-sans-serif,system-ui,"Helvetica Neue",Arial,sans-serif;
+  --font-display:Georgia,"Iowan Old Style","Times New Roman",serif;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font:16.5px/1.62 var(--font-base)}
+img{max-width:100%}
+
+h1,h2,h3,h4{margin:0;line-height:1.1;text-transform:uppercase;letter-spacing:-.02em;font-weight:800}
+.serif{font-family:var(--font-display);text-transform:none;letter-spacing:0;font-weight:600}
+
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+.stack > * + *{margin-top:18px}
+
+/* ── Cabecera ───────────────────────────────────────────────────────────── */
+.top{position:sticky;top:0;z-index:20;background:var(--cream);
+     border-bottom:2px solid var(--ink)}
+.top .bar{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 0}
+.brand{display:flex;align-items:center;gap:12px;font-family:var(--font-display);
+       font-size:24px;text-decoration:none;color:var(--ink)}
+.brand .dot{width:30px;height:30px;border-radius:50%;background:var(--red);position:relative;flex:0 0 auto}
+.brand .dot::after{content:"";position:absolute;inset:7px auto auto 7px;width:16px;height:16px;
+                   border-radius:50%;background:var(--amber)}
+.nav{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+.nav a{color:var(--ink);text-decoration:none;font-weight:700;font-size:14.5px;
+       text-transform:uppercase;letter-spacing:.04em}
+.nav a:hover,.nav a[aria-current]{color:var(--red)}
+
+/* ── Botones ────────────────────────────────────────────────────────────── */
+.btn{display:inline-block;padding:14px 22px;border-radius:999px;font-weight:800;font-size:14.5px;
+     text-decoration:none;border:2px solid var(--ink);background:var(--red);color:#fff}
+.btn:hover{transform:translateY(-1px)}
+.btn.amber{background:var(--amber);color:#1a1200}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.light{background:var(--white);color:var(--ink)}
+.btn.small{padding:10px 16px;font-size:13px}
+
+/* ── Bloque escenario con geometría ────────────────────────────────────── */
+.stage{background:var(--black);color:#fff;position:relative;overflow:hidden;
+       border-bottom:2px solid var(--ink)}
+.stage .shapes{position:absolute;inset:0;pointer-events:none}
+.stage .shapes i{position:absolute;display:block;border-radius:50%}
+.stage .s1{width:280px;height:280px;background:var(--red);right:8%;top:-70px}
+.stage .s2{width:420px;height:420px;background:rgba(225,29,46,.55);right:-60px;top:60px}
+.stage .s3{width:190px;height:190px;background:var(--amber);right:26%;bottom:-70px}
+.stage .s4{width:120px;height:120px;background:rgba(245,158,11,.7);left:8%;bottom:40px}
+.stage.photo{background-image:
+    linear-gradient(100deg,rgba(11,11,12,.95) 0%,rgba(11,11,12,.80) 42%,rgba(11,11,12,.40) 100%),
+    url('img/hero-cortina.jpg');
+  background-size:cover;background-position:center}
+.stage.photo .shapes{opacity:.45}
+.stage .inner{position:relative;padding:70px 0 76px;max-width:760px}
+.kicker{font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--amber);font-weight:800}
+.stage h1{font-size:62px;margin:14px 0 14px}
+.stage p{color:rgba(255,255,255,.85);font-size:19px;max-width:52ch;text-transform:none;
+         letter-spacing:0;font-weight:400;font-family:var(--font-base)}
+.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px}
+.chips{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.chip{background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.28);border-radius:999px;
+      padding:8px 16px;font-size:13px;font-weight:700}
+.chip b{color:var(--amber)}
+
+/* ── Secciones ─────────────────────────────────────────────────────────── */
+section{padding:60px 0}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;
+          border-bottom:2px solid var(--ink);padding-bottom:14px;margin-bottom:30px}
+.sec-head h2{font-size:36px}
+.sec-head p{margin:6px 0 0;color:var(--muted);font-size:15px;text-transform:none;letter-spacing:0;
+            font-weight:400}
+.sec-head .more{font-size:14px;font-weight:800;color:var(--red);text-decoration:none;
+                text-transform:uppercase;letter-spacing:.05em;white-space:nowrap}
+
+.grid{display:grid;gap:20px}
+.c4{grid-template-columns:repeat(4,1fr)}
+.c3{grid-template-columns:repeat(3,1fr)}
+.c2{grid-template-columns:repeat(2,1fr)}
+
+.card{background:var(--white);border:2px solid var(--ink);border-radius:var(--radius);padding:20px}
+.card.hard{box-shadow:var(--shadow-hard)}
+.thumb{height:104px;border-radius:10px;margin-bottom:14px;border:1px solid var(--line);
+       background:
+         radial-gradient(circle at 78% 22%,var(--amber) 0 26px,transparent 27px),
+         radial-gradient(circle at 88% 44%,var(--red) 0 42px,transparent 43px),
+         radial-gradient(circle at 10% 88%,rgba(225,29,46,.6) 0 34px,transparent 35px),
+         var(--cream);
+       display:flex;align-items:flex-end;padding:10px;color:var(--muted);font-size:10.5px;
+       letter-spacing:.14em;text-transform:uppercase}
+.card h3{font-size:18px}
+.card p{margin:8px 0 0;color:var(--muted);font-size:14.5px;text-transform:none;letter-spacing:0;
+        font-weight:400}
+/* foto real en tarjeta de curso */
+.ph-img{height:150px;border-radius:10px;margin-bottom:14px;background:var(--cream) center/cover no-repeat;
+        border:1px solid var(--line)}
+.cover-sm{width:100%;max-width:520px;height:300px;object-fit:cover;border:2px solid var(--ink);
+          border-radius:var(--radius)}
+.poster{width:100%;max-width:260px;border:2px solid var(--ink);border-radius:var(--radius)}
+.tag{display:inline-block;margin-bottom:10px;background:var(--cream);border:1px solid var(--line);
+     border-radius:999px;padding:4px 12px;font-size:11.5px;font-weight:800;text-transform:uppercase;
+     letter-spacing:.08em}
+.tag.red{background:#FDE7E9;border-color:#F6BFC4;color:#8E1220}
+.tag.green{background:#E7F6EC;border-color:#BEE3C9;color:#12683A}
+.price{display:flex;align-items:baseline;gap:8px;margin-top:10px}
+.price b{font-size:30px;color:var(--red);letter-spacing:-.03em}
+.price small{color:var(--muted)}
+.terms{margin-top:14px;padding-top:12px;border-top:1px dashed var(--line);font-size:12.5px;
+       color:var(--muted)}
+.note{color:var(--muted);font-size:14.5px;margin-top:16px}
+
+/* ── Franja de eventos / banda oscura ──────────────────────────────────── */
+.band{background:var(--black);color:#fff}
+.band .sec-head{border-color:rgba(255,255,255,.28)}
+.band .sec-head p{color:rgba(255,255,255,.65)}
+.band .card{background:#141416;border-color:rgba(255,255,255,.22);color:#fff}
+.band .card p{color:rgba(255,255,255,.72)}
+.when{list-style:none;padding:0;margin:14px 0 0}
+.when li{display:flex;justify-content:space-between;gap:14px;padding:10px 0;
+         border-top:1px solid rgba(255,255,255,.16);font-size:15px}
+.when li:first-child{border-top:0}
+.when span:last-child{color:var(--amber);font-weight:700}
+
+/* ── Pasos ─────────────────────────────────────────────────────────────── */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.step{background:var(--white);border:2px solid var(--ink);border-radius:var(--radius-lg);padding:26px}
+.step .num{width:44px;height:44px;border-radius:50%;background:var(--red);color:#fff;font-weight:800;
+           display:flex;align-items:center;justify-content:center;font-size:18px}
+.step h3{font-size:19px;margin:14px 0 6px}
+.step p{margin:0;color:var(--muted);font-size:14.5px;text-transform:none;letter-spacing:0;font-weight:400}
+
+/* ── Tabla comparativa ─────────────────────────────────────────────────── */
+.table{width:100%;border-collapse:separate;border-spacing:0;background:var(--white);
+       border:2px solid var(--ink);border-radius:var(--radius-lg);overflow:hidden}
+.table th,.table td{padding:15px 18px;text-align:left;border-bottom:1px solid var(--line);
+                    font-size:15.5px}
+.table thead th{background:var(--black);color:#fff;font-size:13px;text-transform:uppercase;
+                letter-spacing:.08em}
+.table tbody tr:last-child td{border-bottom:0}
+.table tbody tr:nth-child(even){background:#FBF8F6}
+.table td b{font-size:19px;color:var(--red)}
+
+/* ── Avisos y notas de reglas ──────────────────────────────────────────── */
+.callout{background:var(--white);border:2px dashed var(--ink);border-radius:var(--radius);padding:20px}
+.callout.amber{background:#FFF4DE;border-style:solid}
+.callout.red{background:#FDE7E9;border-style:solid;border-color:#C0392B}
+.callout h3{font-size:17px;margin-bottom:8px}
+.callout p{margin:0;color:var(--muted);font-size:14.5px;text-transform:none;letter-spacing:0;
+           font-weight:400}
+.faq{background:var(--white);border:2px solid var(--ink);border-radius:var(--radius);padding:0 22px}
+.faq details{padding:16px 0;border-bottom:1px solid var(--line)}
+.faq details:last-child{border-bottom:0}
+.faq summary{cursor:pointer;font-weight:800;font-size:16px;text-transform:none;letter-spacing:0}
+.faq p{margin:10px 0 0;color:var(--muted);font-size:14.5px;text-transform:none;letter-spacing:0;
+       font-weight:400}
+
+/* ── Pie ───────────────────────────────────────────────────────────────── */
+footer{background:var(--black);color:rgba(255,255,255,.78);padding:44px 0 52px;margin-top:20px}
+footer .cols{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:28px}
+footer h4{color:#fff;font-size:15px;margin-bottom:10px}
+footer a{color:rgba(255,255,255,.78);text-decoration:none;display:block;padding:3px 0;font-size:14.5px}
+footer a:hover{color:var(--amber)}
+.ph{color:rgba(255,255,255,.42);font-style:italic}
+.stripe{height:10px;background:repeating-linear-gradient(90deg,
+        var(--red) 0 26px,var(--amber) 26px 52px,var(--black) 52px 78px)}
