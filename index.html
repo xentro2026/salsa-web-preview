@@ -12,14 +12,25 @@
 <header class="top">
   <div class="wrap bar">
     <a class="brand" href="index.html"><span class="dot"></span> Salsa y Sabor</a>
-    <nav class="nav">
+    <nav class="nav desktop-nav" aria-label="Hauptnavigation">
       <a href="kurse.html">Kurse</a>
       <a href="preise.html">Preise &amp; Tarife</a>
       <a href="events.html">Events</a>
       <a href="#service">Privatstunden</a>
-      <a href="#kontakt">Kontakt</a>
+      <a href="kontakt.html">Kontakt</a>
       <a class="btn small" href="kurse.html">Kurs finden</a>
     </nav>
+    <details class="mobile-menu">
+      <summary>Menü <span aria-hidden="true">☰</span></summary>
+      <nav class="nav" aria-label="Mobile Navigation">
+      <a href="kurse.html">Kurse</a>
+      <a href="preise.html">Preise &amp; Tarife</a>
+      <a href="events.html">Events</a>
+      <a href="#service">Privatstunden</a>
+      <a href="kontakt.html">Kontakt</a>
+      <a class="btn small" href="kurse.html">Kurs finden</a>
+    </nav>
+    </details>
   </div>
 </header>
 
@@ -68,7 +79,7 @@
       <article class="card" style="background:var(--cream)">
         <h3>Nicht sicher?</h3>
         <p>Schreib uns zwei Sätze – wir sagen dir, welcher Kurs passt.</p>
-        <p style="margin-top:12px"><a class="btn small" href="#kontakt">Beratung</a></p></article>
+        <p class="card-actions"><a class="btn small" href="kontakt.html">Beratung</a></p></article>
     </div>
   </section>
 
@@ -94,8 +105,6 @@
     <p class="note">Kein Vertrag nötig? Dann 8er Tanzkarte 110 € (180 Tage ab erstem Besuch),
       Monatskarte 54 € (31 Tage, 1 Termin pro Woche) oder Drop-in 15 € für einen festen Termin.</p>
   </section>
-</main>
-
 <div class="band">
   <section class="wrap">
     <div class="sec-head">
@@ -122,7 +131,7 @@
   </section>
 </div>
 
-<main>
+
   <section class="wrap">
     <div class="sec-head"><div><h2>So einfach geht's</h2><p>In drei Schritten tanzt du.</p></div></div>
     <div class="steps">
@@ -139,10 +148,12 @@
     <div class="callout amber">
       <h3>Privatstunden &amp; Tanzgutscheine</h3>
       <p>Beides bieten wir auf Anfrage an – Preise nennen wir dir direkt. Gutscheine lassen sich
-         später auch als Paket buchen. <a href="#kontakt" style="color:var(--red);font-weight:800">
+         später auch als Paket buchen. <a href="kontakt.html" style="color:var(--red-ink);font-weight:800">
          Jetzt anfragen →</a></p>
     </div>
   </section>
+
+
 </main>
 
 <div class="stripe"></div>
@@ -153,17 +164,18 @@
       <p class="ph">Adresse, Telefon und E-Mail: bestehende Angaben übernehmen</p>
     </div>
     <div>
-      <h4>Kurse</h4>
+      <h4>Entdecken</h4>
+      <a href="ueber-mich.html">Über mich</a>
       <a href="kurse.html">Alle Kurse</a>
       <a href="preise.html">Preise &amp; Tarife</a>
       <a href="events.html">Events</a>
     </div>
     <div>
       <h4>Rechtliches</h4>
-      <a href="#" class="ph">Impressum</a>
-      <a href="#" class="ph">AGB</a>
-      <a href="#" class="ph">Datenschutz</a>
-      <a href="#" class="ph">Widerruf</a>
+      <a href="legales.html#impressum">Impressum</a>
+      <a href="legales.html#agb">AGB</a>
+      <a href="legales.html#datenschutz">Datenschutz</a>
+      <a href="legales.html#widerruf">Widerruf</a>
     </div>
   </div>
 </footer>

@@ -12,14 +12,25 @@
 <header class="top">
   <div class="wrap bar">
     <a class="brand" href="index.html"><span class="dot"></span> Salsa y Sabor</a>
-    <nav class="nav">
+    <nav class="nav desktop-nav" aria-label="Hauptnavigation">
       <a href="kurse.html" aria-current="page">Kurse</a>
       <a href="preise.html">Preise &amp; Tarife</a>
       <a href="events.html">Events</a>
       <a href="index.html#service">Privatstunden</a>
-      <a href="index.html#kontakt">Kontakt</a>
+      <a href="kontakt.html">Kontakt</a>
       <a class="btn small" href="preise.html">Preise</a>
     </nav>
+    <details class="mobile-menu">
+      <summary>Menü <span aria-hidden="true">☰</span></summary>
+      <nav class="nav" aria-label="Mobile Navigation">
+      <a href="kurse.html" aria-current="page">Kurse</a>
+      <a href="preise.html">Preise &amp; Tarife</a>
+      <a href="events.html">Events</a>
+      <a href="index.html#service">Privatstunden</a>
+      <a href="kontakt.html">Kontakt</a>
+      <a class="btn small" href="preise.html">Preise</a>
+    </nav>
+    </details>
   </div>
 </header>
 
@@ -31,13 +42,13 @@
     <div class="grid c2" style="margin-top:20px;align-items:start">
       <div>
         <span class="tag red">Einsteiger</span>
-        <h1 style="font-size:44px">Salsa Cubana Anfänger A1</h1>
-        <img loading="lazy" decoding="async" class="cover-sm" src="img/kurs-salsa-a1.jpg" alt="Salsa Cubana Anfänger A1"
+        <h1>Salsa Cubana Anfänger A1</h1>
+        <img loading="lazy" decoding="async" class="cover-sm" src="img/kurs-salsa-a1.jpg" width="500" height="300" alt="Salsa Cubana Anfänger A1"
              style="margin:18px 0 6px">
         <p style="color:var(--muted);font-size:17px;margin-top:12px">Keine Vorkenntnisse nötig.
           Wir starten mit Grundschritt, Rhythmus und Führen/Folgen – du tanzt ab dem ersten Abend.</p>
 
-        <div class="grid c2" style="margin-top:22px">
+        <div class="grid facts-grid" style="margin-top:22px">
           <div class="callout" style="padding:16px 18px"><h3 style="font-size:13px">Wann</h3>
             <p style="font-size:14px">Dienstag 19:15 – 20:15</p></div>
           <div class="callout" style="padding:16px 18px"><h3 style="font-size:13px">Wer</h3>
@@ -52,12 +63,12 @@
       <aside class="card hard">
         <h3>Nächste Termine</h3>
         <ul class="when" style="color:var(--ink)">
-          <li><span>Di 22.09.2026</span><span style="color:var(--red)">frei</span></li>
-          <li><span>Di 29.09.2026</span><span style="color:var(--red)">frei</span></li>
-          <li><span>Di 06.10.2026</span><span style="color:var(--red)">wenige</span></li>
-          <li><span>Di 13.10.2026</span><span style="color:var(--red)">frei</span></li>
+          <li><span>Di 22.09.2026</span><span style="color:var(--red-ink)">frei</span></li>
+          <li><span>Di 29.09.2026</span><span style="color:var(--red-ink)">frei</span></li>
+          <li><span>Di 06.10.2026</span><span style="color:var(--red-ink)">wenige</span></li>
+          <li><span>Di 13.10.2026</span><span style="color:var(--red-ink)">frei</span></li>
         </ul>
-        <p style="margin-top:16px"><a class="btn" href="#reservieren" style="width:100%;text-align:center">
+        <p style="margin-top:16px"><a class="btn" href="reservieren.html" style="width:100%;text-align:center">
           Platz reservieren</a></p>
         <div class="terms">Reservierung wird bestätigt – bei Zahlung vor Ort gilt der Platz bis 15 Minuten
           vor Kursbeginn.</div>
@@ -115,8 +126,8 @@
     <div><h4>Salsa y Sabor</h4><p class="ph">Adresse, Telefon und E-Mail: bestehende Angaben übernehmen</p></div>
     <div><h4>Kurse</h4><a href="kurse.html">Alle Kurse</a><a href="preise.html">Preise</a>
       <a href="events.html">Events</a></div>
-    <div><h4>Rechtliches</h4><a href="#" class="ph">Impressum</a><a href="#" class="ph">AGB</a>
-      <a href="#" class="ph">Datenschutz</a></div>
+    <div><h4>Rechtliches</h4><a href="legales.html#impressum">Impressum</a><a href="legales.html#agb">AGB</a>
+      <a href="legales.html#datenschutz">Datenschutz</a></div>
   </div>
 </footer>
 </body>

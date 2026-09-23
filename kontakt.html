@@ -12,7 +12,7 @@
 <header class="top">
   <div class="wrap bar">
     <a class="brand" href="index.html"><span class="dot"></span> Salsa y Sabor</a>
-    <nav class="nav">
+    <nav class="nav desktop-nav" aria-label="Hauptnavigation">
       <a href="kurse.html">Kurse</a>
       <a href="preise.html">Preise &amp; Tarife</a>
       <a href="events.html">Events</a>
@@ -20,13 +20,24 @@
       <a href="kontakt.html" aria-current="page">Kontakt</a>
       <a class="btn small" href="kurse.html">Kurs finden</a>
     </nav>
+    <details class="mobile-menu">
+      <summary>Menü <span aria-hidden="true">☰</span></summary>
+      <nav class="nav" aria-label="Mobile Navigation">
+      <a href="kurse.html">Kurse</a>
+      <a href="preise.html">Preise &amp; Tarife</a>
+      <a href="events.html">Events</a>
+      <a href="ueber-mich.html">Über mich</a>
+      <a href="kontakt.html" aria-current="page">Kontakt</a>
+      <a class="btn small" href="kurse.html">Kurs finden</a>
+    </nav>
+    </details>
   </div>
 </header>
 
 <main class="wrap">
   <section style="padding-bottom:0">
-    <div class="kicker" style="color:var(--red)">Kontakt</div>
-    <h1 style="font-size:40px;margin-top:8px">Schreib uns</h1>
+    <div class="kicker" style="color:var(--red-ink)">Kontakt</div>
+    <h1 style="margin-top:8px">Schreib uns</h1>
     <p style="color:var(--muted)">Fragen zu Kursen, Privatstunden, Gutscheinen oder deiner Mitgliedschaft –
       wir antworten in der Regel am selben Tag.</p>
   </section>
@@ -35,7 +46,7 @@
     <div class="grid c2" style="align-items:start">
       <article class="card hard">
         <h3>Anfrage senden</h3>
-        <div class="grid c2" style="margin-top:14px;gap:12px">
+        <div class="grid facts-grid" style="margin-top:14px;gap:12px">
           <div class="callout" style="padding:12px 14px"><h3 style="font-size:12px">Name</h3>
             <p style="font-size:13.5px">—</p></div>
           <div class="callout" style="padding:12px 14px"><h3 style="font-size:12px">E-Mail</h3>
@@ -71,8 +82,8 @@
     <div><h4>Salsa y Sabor</h4><p class="ph">Adresse, Telefon und E-Mail: bestehende Angaben übernehmen</p></div>
     <div><h4>Kurse</h4><a href="kurse.html">Alle Kurse</a><a href="preise.html">Preise</a>
       <a href="events.html">Events</a></div>
-    <div><h4>Rechtliches</h4><a href="legales.html" class="ph">Impressum</a>
-      <a href="legales.html" class="ph">AGB</a><a href="legales.html" class="ph">Datenschutz</a></div>
+    <div><h4>Rechtliches</h4><a href="legales.html#impressum">Impressum</a>
+      <a href="legales.html#agb">AGB</a><a href="legales.html#datenschutz">Datenschutz</a></div>
   </div>
 </footer>
 </body>

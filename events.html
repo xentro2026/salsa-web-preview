@@ -12,22 +12,33 @@
 <header class="top">
   <div class="wrap bar">
     <a class="brand" href="index.html"><span class="dot"></span> Salsa y Sabor</a>
-    <nav class="nav">
+    <nav class="nav desktop-nav" aria-label="Hauptnavigation">
       <a href="kurse.html">Kurse</a>
       <a href="preise.html">Preise &amp; Tarife</a>
       <a href="events.html" aria-current="page">Events</a>
       <a href="index.html#service">Privatstunden</a>
-      <a href="index.html#kontakt">Kontakt</a>
+      <a href="kontakt.html">Kontakt</a>
       <a class="btn small" href="kurse.html">Kurs finden</a>
     </nav>
+    <details class="mobile-menu">
+      <summary>Menü <span aria-hidden="true">☰</span></summary>
+      <nav class="nav" aria-label="Mobile Navigation">
+      <a href="kurse.html">Kurse</a>
+      <a href="preise.html">Preise &amp; Tarife</a>
+      <a href="events.html" aria-current="page">Events</a>
+      <a href="index.html#service">Privatstunden</a>
+      <a href="kontakt.html">Kontakt</a>
+      <a class="btn small" href="kurse.html">Kurs finden</a>
+    </nav>
+    </details>
   </div>
 </header>
 
 <div class="stage">
   <div class="shapes"><i class="s1"></i><i class="s3"></i><i class="s4"></i></div>
-  <div class="wrap inner" style="padding:56px 0 62px">
+  <div class="wrap inner inner-compact">
     <div class="kicker">Events</div>
-    <h1 style="font-size:48px">Partys &amp; Afternoon Socials</h1>
+    <h1>Partys &amp; Afternoon Socials</h1>
     <p>Partys im Tino, Café con Sabor am Sonntagnachmittag und Specials – hier findest du alle
        bestätigten Termine.</p>
   </div>
@@ -37,15 +48,15 @@
   <section>
     <div class="sec-head"><div><h2>Bestätigte Termine 2026</h2>
       <p>Stand: 22. September 2026. Termine werden nur hier gepflegt – es gibt keine zweite Liste.</p></div></div>
-    <div class="grid c2">
+    <div class="grid c2 event-grid">
       <article class="card hard">
         <span class="tag red">Party</span>
         <h3>Salsa Party im Tino · Westerstede</h3>
         <p>Workshop um 19:00, danach Party. Eintritt 6 € plus 10 € Verzehr, Abendkasse.</p>
         <ul class="when" style="color:var(--ink)">
-          <li><span>Samstag 03.10.2026</span><span style="color:var(--red)">Workshop 19:00</span></li>
-          <li><span>Samstag 07.11.2026</span><span style="color:var(--red)">Party ab 21:00</span></li>
-          <li><span>Samstag 05.12.2026</span><span style="color:var(--red)">Abendkasse</span></li>
+          <li><span>Samstag 03.10.2026</span><span style="color:var(--red-ink)">Workshop 19:00</span></li>
+          <li><span>Samstag 07.11.2026</span><span style="color:var(--red-ink)">Party ab 21:00</span></li>
+          <li><span>Samstag 05.12.2026</span><span style="color:var(--red-ink)">Abendkasse</span></li>
         </ul>
         <p class="note">Kein Online-Ticket: Eintritt direkt an der Abendkasse.</p>
       </article>
@@ -53,13 +64,13 @@
       <article class="card hard">
         <span class="tag green">Social</span>
         <h3>Café con Sabor</h3>
-        <img loading="lazy" decoding="async" class="poster" src="img/event-cafe-con-sabor.png" alt="Café con Sabor"
+        <img loading="lazy" decoding="async" class="poster" src="img/event-cafe-con-sabor.png" width="941" height="1672" alt="Café con Sabor"
              style="margin:8px 0 14px">
         <p>Afternoon Social in entspannter Atmosphäre – tanzen, plaudern, Kaffee. 15:00 bis 18:30.</p>
         <ul class="when" style="color:var(--ink)">
-          <li><span>Sonntag 04.10.2026</span><span style="color:var(--red)">15:00 – 18:30</span></li>
-          <li><span>Sonntag 08.11.2026</span><span style="color:var(--red)">Zahlung vor Ort</span></li>
-          <li><span>Sonntag 06.12.2026</span><span style="color:var(--red)">15:00 – 18:30</span></li>
+          <li><span>Sonntag 04.10.2026</span><span style="color:var(--red-ink)">15:00 – 18:30</span></li>
+          <li><span>Sonntag 08.11.2026</span><span style="color:var(--red-ink)">Zahlung vor Ort</span></li>
+          <li><span>Sonntag 06.12.2026</span><span style="color:var(--red-ink)">15:00 – 18:30</span></li>
         </ul>
         <p class="note">Keine Anmeldung nötig, keine Online-Tickets – Zahlung vor Ort.</p>
       </article>
@@ -98,8 +109,8 @@
     <div><h4>Salsa y Sabor</h4><p class="ph">Adresse, Telefon und E-Mail: bestehende Angaben übernehmen</p></div>
     <div><h4>Kurse</h4><a href="kurse.html">Alle Kurse</a><a href="preise.html">Preise</a>
       <a href="events.html">Events</a></div>
-    <div><h4>Rechtliches</h4><a href="#" class="ph">Impressum</a><a href="#" class="ph">AGB</a>
-      <a href="#" class="ph">Datenschutz</a></div>
+    <div><h4>Rechtliches</h4><a href="legales.html#impressum">Impressum</a><a href="legales.html#agb">AGB</a>
+      <a href="legales.html#datenschutz">Datenschutz</a></div>
   </div>
 </footer>
 </body>

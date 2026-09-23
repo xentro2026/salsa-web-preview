@@ -12,7 +12,7 @@
 <header class="top">
   <div class="wrap bar">
     <a class="brand" href="index.html"><span class="dot"></span> Salsa y Sabor</a>
-    <nav class="nav">
+    <nav class="nav desktop-nav" aria-label="Hauptnavigation">
       <a href="kurse.html">Kurse</a>
       <a href="preise.html">Preise &amp; Tarife</a>
       <a href="events.html">Events</a>
@@ -20,14 +20,25 @@
       <a href="kontakt.html">Kontakt</a>
       <a class="btn small" href="kurse.html">Kurs finden</a>
     </nav>
+    <details class="mobile-menu">
+      <summary>Menü <span aria-hidden="true">☰</span></summary>
+      <nav class="nav" aria-label="Mobile Navigation">
+      <a href="kurse.html">Kurse</a>
+      <a href="preise.html">Preise &amp; Tarife</a>
+      <a href="events.html">Events</a>
+      <a href="ueber-mich.html" aria-current="page">Über mich</a>
+      <a href="kontakt.html">Kontakt</a>
+      <a class="btn small" href="kurse.html">Kurs finden</a>
+    </nav>
+    </details>
   </div>
 </header>
 
 <div class="stage photo">
   <div class="shapes"><i class="s1"></i><i class="s3"></i></div>
-  <div class="wrap inner" style="padding:56px 0 62px">
+  <div class="wrap inner inner-compact">
     <div class="kicker">Über mich</div>
-    <h1 style="font-size:48px">Alejandro Dueñas</h1>
+    <h1>Alejandro Dueñas</h1>
     <p>Gebürtiger Latino und Salsa-Lehrer in Oldenburg – seit 2007 mit eigener Schule, kleinen Gruppen
        und echter Latin-Energie.</p>
   </div>
@@ -46,15 +57,15 @@
           hineinzuschnuppern.</p>
         <div class="chips" style="margin-top:22px">
           <span class="chip" style="background:var(--cream);border-color:var(--line);color:var(--ink)">
-            <b style="color:var(--red)">seit 2007</b> in Oldenburg</span>
+            <b style="color:var(--red-ink)">seit 2007</b> in Oldenburg</span>
           <span class="chip" style="background:var(--cream);border-color:var(--line);color:var(--ink)">
-            <b style="color:var(--red)">7</b> laufende Kurse</span>
+            <b style="color:var(--red-ink)">7</b> laufende Kurse</span>
           <span class="chip" style="background:var(--cream);border-color:var(--line);color:var(--ink)">
             Salsa · Bachata · Fusion · Fitness</span>
         </div>
       </div>
-      <img loading="lazy" decoding="async" class="cover-sm" src="img/kurs-salsa-m2.jpg" alt="Unterricht bei Salsa y Sabor"
-           style="max-width:100%;height:420px">
+      <img loading="lazy" decoding="async" class="cover-sm" src="img/kurs-salsa-m2.jpg" width="1000" height="667" alt="Unterricht bei Salsa y Sabor"
+           style="max-width:100%">
     </div>
   </section>
 
@@ -72,7 +83,7 @@
   <section style="padding-top:0">
     <div class="callout amber"><h3>Privatstunden &amp; Tanzgutscheine</h3>
       <p>Auf Anfrage – Preise nennen wir dir direkt. <a href="kontakt.html"
-        style="color:var(--red);font-weight:800">Jetzt anfragen →</a></p></div>
+        style="color:var(--red-ink);font-weight:800">Jetzt anfragen →</a></p></div>
   </section>
 </main>
 
@@ -82,8 +93,8 @@
     <div><h4>Salsa y Sabor</h4><p class="ph">Adresse, Telefon und E-Mail: bestehende Angaben übernehmen</p></div>
     <div><h4>Kurse</h4><a href="kurse.html">Alle Kurse</a><a href="preise.html">Preise</a>
       <a href="events.html">Events</a></div>
-    <div><h4>Rechtliches</h4><a href="legales.html" class="ph">Impressum</a>
-      <a href="legales.html" class="ph">AGB</a><a href="legales.html" class="ph">Datenschutz</a></div>
+    <div><h4>Rechtliches</h4><a href="legales.html#impressum">Impressum</a>
+      <a href="legales.html#agb">AGB</a><a href="legales.html#datenschutz">Datenschutz</a></div>
   </div>
 </footer>
 </body>

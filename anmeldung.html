@@ -12,13 +12,23 @@
 <header class="top">
   <div class="wrap bar">
     <a class="brand" href="index.html"><span class="dot"></span> Salsa y Sabor</a>
-    <nav class="nav">
+    <nav class="nav desktop-nav" aria-label="Hauptnavigation">
       <a href="kurse.html">Kurse</a>
       <a href="preise.html">Preise &amp; Tarife</a>
       <a href="events.html">Events</a>
       <a href="konto.html">Mein Konto</a>
       <a class="btn small" href="preise.html">Tarife</a>
     </nav>
+    <details class="mobile-menu">
+      <summary>Menü <span aria-hidden="true">☰</span></summary>
+      <nav class="nav" aria-label="Mobile Navigation">
+      <a href="kurse.html">Kurse</a>
+      <a href="preise.html">Preise &amp; Tarife</a>
+      <a href="events.html">Events</a>
+      <a href="konto.html">Mein Konto</a>
+      <a class="btn small" href="preise.html">Tarife</a>
+    </nav>
+    </details>
   </div>
 </header>
 
@@ -26,7 +36,7 @@
   <section style="padding-bottom:0">
     <p style="font-size:13.5px;color:var(--muted)"><a href="preise.html" style="color:inherit">Preise</a>
       › Mitglied werden</p>
-    <h1 style="font-size:40px;margin-top:14px">Mitglied werden</h1>
+    <h1 style="margin-top:14px">Mitglied werden</h1>
     <p style="color:var(--muted)">Drei kurze Abschnitte: Tarif, deine Daten, Zahlung und Zustimmung.
       Du siehst vorher genau, was du abschließt.</p>
   </section>
@@ -119,9 +129,9 @@
     <div><h4>Salsa y Sabor</h4><p class="ph">Adresse, Telefon und E-Mail: bestehende Angaben übernehmen</p></div>
     <div><h4>Kurse</h4><a href="kurse.html">Alle Kurse</a><a href="preise.html">Preise</a>
       <a href="events.html">Events</a></div>
-    <div><h4>Rechtliches</h4><a href="legales.html" class="ph">Impressum</a>
-      <a href="legales.html" class="ph">AGB</a><a href="legales.html" class="ph">Datenschutz</a>
-      <a href="legales.html" class="ph">Widerruf</a></div>
+    <div><h4>Rechtliches</h4><a href="legales.html#impressum">Impressum</a>
+      <a href="legales.html#agb">AGB</a><a href="legales.html#datenschutz">Datenschutz</a>
+      <a href="legales.html#widerruf">Widerruf</a></div>
   </div>
 </footer>
 </body>

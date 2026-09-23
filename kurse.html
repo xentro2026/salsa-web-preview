@@ -12,22 +12,33 @@
 <header class="top">
   <div class="wrap bar">
     <a class="brand" href="index.html"><span class="dot"></span> Salsa y Sabor</a>
-    <nav class="nav">
+    <nav class="nav desktop-nav" aria-label="Hauptnavigation">
       <a href="kurse.html" aria-current="page">Kurse</a>
       <a href="preise.html">Preise &amp; Tarife</a>
       <a href="events.html">Events</a>
       <a href="index.html#service">Privatstunden</a>
-      <a href="index.html#kontakt">Kontakt</a>
+      <a href="kontakt.html">Kontakt</a>
       <a class="btn small" href="#kurse">Kurs finden</a>
     </nav>
+    <details class="mobile-menu">
+      <summary>Menü <span aria-hidden="true">☰</span></summary>
+      <nav class="nav" aria-label="Mobile Navigation">
+      <a href="kurse.html" aria-current="page">Kurse</a>
+      <a href="preise.html">Preise &amp; Tarife</a>
+      <a href="events.html">Events</a>
+      <a href="index.html#service">Privatstunden</a>
+      <a href="kontakt.html">Kontakt</a>
+      <a class="btn small" href="#kurse">Kurs finden</a>
+    </nav>
+    </details>
   </div>
 </header>
 
 <div class="stage photo">
   <div class="shapes"><i class="s1"></i><i class="s2"></i><i class="s3"></i></div>
-  <div class="wrap inner" style="padding:56px 0 62px">
+  <div class="wrap inner inner-compact">
     <div class="kicker">Kurse</div>
-    <h1 style="font-size:48px">Finde deinen Kurs</h1>
+    <h1>Finde deinen Kurs</h1>
     <p>Sieben Kurse, feste Wochentage, kleine Gruppen. Du kannst mit einer Karte starten –
        ohne Vertrag.</p>
   </div>
@@ -48,7 +59,7 @@
         <h3>Salsa Cubana Anfänger A1</h3>
         <p>Dienstag 19:15 – 20:15 · Alejandro</p>
         <div class="terms">Plätze frei · keine Vorkenntnisse nötig</div>
-        <p style="margin-top:14px"><a class="btn small" href="kurs-detail.html">Kurs ansehen</a></p>
+        <p class="card-actions"><a class="btn small" href="kurs-detail.html">Kurs ansehen</a></p>
       </article>
 
       <article class="card"><div class="ph-img" style="background-image:url('img/kurs-salsa-a3.jpg')"></div>
@@ -56,7 +67,7 @@
         <h3>Salsa Cubana A3</h3>
         <p>Fortsetzung A2 · feste Gruppe</p>
         <div class="terms">Wenige Plätze · Einstieg nach Absprache</div>
-        <p style="margin-top:14px"><a class="btn small ghost" href="kurs-detail.html">Details</a></p>
+        <p class="card-actions"><a class="btn small ghost" href="kurs-detail.html">Details</a></p>
       </article>
 
       <article class="card"><div class="ph-img" style="background-image:url('img/kurs-salsa-m2.jpg')"></div>
@@ -64,7 +75,7 @@
         <h3>Salsa Cubana M2</h3>
         <p>Technik, Figuren und Timing</p>
         <div class="terms">Auf Anfrage</div>
-        <p style="margin-top:14px"><a class="btn small ghost" href="kurs-detail.html">Details</a></p>
+        <p class="card-actions"><a class="btn small ghost" href="kurs-detail.html">Details</a></p>
       </article>
 
       <article class="card"><div class="ph-img" style="background-image:url('img/kurs-bachata-a1.jpg')"></div>
@@ -72,7 +83,7 @@
         <h3>Bachata Sensual Anfänger A1</h3>
         <p>Dienstags · Einsteiger willkommen</p>
         <div class="terms">Plätze frei</div>
-        <p style="margin-top:14px"><a class="btn small ghost" href="kurs-detail.html">Details</a></p>
+        <p class="card-actions"><a class="btn small ghost" href="kurs-detail.html">Details</a></p>
       </article>
 
       <article class="card"><div class="ph-img" style="background-image:url('img/kurs-latino-fusion.jpg')"></div>
@@ -80,7 +91,7 @@
         <h3>Latino Fusion</h3>
         <p>Anfänger A2 · 20:45 – 21:45</p>
         <div class="terms">Plätze frei</div>
-        <p style="margin-top:14px"><a class="btn small ghost" href="kurs-detail.html">Details</a></p>
+        <p class="card-actions"><a class="btn small ghost" href="kurs-detail.html">Details</a></p>
       </article>
 
       <article class="card"><div class="ph-img" style="background-image:url('img/kurs-bomba-fitness.jpg')"></div>
@@ -88,7 +99,7 @@
         <h3>Bomba Fitness</h3>
         <p>18:15 – 19:00 · für alle</p>
         <div class="terms">Plätze frei · ohne Vorkenntnisse</div>
-        <p style="margin-top:14px"><a class="btn small ghost" href="kurs-detail.html">Details</a></p>
+        <p class="card-actions"><a class="btn small ghost" href="kurs-detail.html">Details</a></p>
       </article>
 
       <article class="card"><div class="ph-img" style="background-image:url('img/kurs-luma-women.jpg')"></div>
@@ -96,14 +107,14 @@
         <h3>Luma Women</h3>
         <p>Eigene Gruppe · geschützter Raum</p>
         <div class="terms">Wenige Plätze</div>
-        <p style="margin-top:14px"><a class="btn small ghost" href="kurs-detail.html">Details</a></p>
+        <p class="card-actions"><a class="btn small ghost" href="kurs-detail.html">Details</a></p>
       </article>
 
       <article class="card" style="background:var(--black);color:#fff;border-color:var(--ink)">
         <h3 style="color:#fff">Kurs nicht dabei?</h3>
         <p style="color:rgba(255,255,255,.75)">Wir planen Kurse nach Nachfrage. Sag uns, was du
           suchst – oft startet der nächste Kurs schnell.</p>
-        <p style="margin-top:14px"><a class="btn amber small" href="index.html#kontakt">Wunsch senden</a></p>
+        <p class="card-actions"><a class="btn amber small" href="kontakt.html">Wunsch senden</a></p>
       </article>
     </div>
 
@@ -122,8 +133,8 @@
     <div><h4>Salsa y Sabor</h4><p class="ph">Adresse, Telefon und E-Mail: bestehende Angaben übernehmen</p></div>
     <div><h4>Kurse</h4><a href="kurse.html">Alle Kurse</a><a href="preise.html">Preise</a>
       <a href="events.html">Events</a></div>
-    <div><h4>Rechtliches</h4><a href="#" class="ph">Impressum</a><a href="#" class="ph">AGB</a>
-      <a href="#" class="ph">Datenschutz</a></div>
+    <div><h4>Rechtliches</h4><a href="legales.html#impressum">Impressum</a><a href="legales.html#agb">AGB</a>
+      <a href="legales.html#datenschutz">Datenschutz</a></div>
   </div>
 </footer>
 </body>
