@@ -1,0 +1,149 @@
+- generic [active] [ref=f3e1]:
+  - banner [ref=f3e2]:
+    - generic [ref=f3e3]:
+      - link "Salsa y Sabor" [ref=f3e4] [cursor=pointer]:
+        - /url: index.html
+      - navigation [ref=f3e6]:
+        - link "Kurse" [ref=f3e7] [cursor=pointer]:
+          - /url: kurse.html
+        - link "Preise & Tarife" [ref=f3e8] [cursor=pointer]:
+          - /url: preise.html
+        - link "Events" [ref=f3e9] [cursor=pointer]:
+          - /url: events.html
+        - link "Privatstunden" [ref=f3e10] [cursor=pointer]:
+          - /url: index.html#service
+        - link "Kontakt" [ref=f3e11] [cursor=pointer]:
+          - /url: index.html#kontakt
+        - link "Tarif wählen" [ref=f3e12] [cursor=pointer]:
+          - /url: "#tarife"
+  - generic [ref=f3e14]:
+    - generic [ref=f3e15]: Preise & Tarife
+    - heading "Klare Preise, klare Bedingungen" [level=1] [ref=f3e16]
+    - paragraph [ref=f3e17]: Alle Tarife pro Monat. Mindestlaufzeit 4 oder 12 Monate – danach monatlich kündbar mit einem Monat Frist. Kein Vertrag? Dann nimm eine Karte.
+  - main [ref=f3e18]:
+    - generic [ref=f3e19]:
+      - generic [ref=f3e21]:
+        - heading "Mitgliedschaften" [level=2] [ref=f3e22]
+        - paragraph [ref=f3e23]: Die gleichen Leistungen, zwei Laufzeiten.
+      - table [ref=f3e24]:
+        - rowgroup [ref=f3e25]:
+          - row [ref=f3e26]:
+            - columnheader "Tarif" [ref=f3e27]
+            - columnheader "Enthalten" [ref=f3e28]
+            - columnheader "4 Monate" [ref=f3e29]
+            - columnheader "12 Monate" [ref=f3e30]
+        - rowgroup [ref=f3e31]:
+          - row [ref=f3e32]:
+            - cell "Fitness Basic" [ref=f3e33]
+            - cell "1 Fitnesskurs pro Woche" [ref=f3e34]
+            - cell "29 €" [ref=f3e35]
+            - cell "24 €" [ref=f3e36]
+          - row [ref=f3e37]:
+            - cell "Fitness Pro" [ref=f3e38]
+            - cell "2 Fitnesskurse pro Woche" [ref=f3e39]
+            - cell "45 €" [ref=f3e40]
+            - cell "39 €" [ref=f3e41]
+          - row [ref=f3e42]:
+            - cell "Tanzen Basic" [ref=f3e43]
+            - cell "1 Tanzkurs pro Woche" [ref=f3e44]
+            - cell "49 €" [ref=f3e45]
+            - cell "39 €" [ref=f3e46]
+          - row [ref=f3e47]:
+            - cell "Tanzen Pro" [ref=f3e48]
+            - cell "2 Tanzkurse pro Woche" [ref=f3e49]
+            - cell "72 €" [ref=f3e50]
+            - cell "64 €" [ref=f3e51]
+          - row [ref=f3e52]:
+            - cell "Flatrate" [ref=f3e53]
+            - cell "Alle Kurse, ohne Limit" [ref=f3e54]
+            - cell "99 €" [ref=f3e55]
+            - cell "94 €" [ref=f3e56]
+          - row [ref=f3e57]:
+            - cell "Tanzen & Fitness" [ref=f3e58]
+            - cell "1 Tanzkurs + 1 Fitnesskurs" [ref=f3e59]
+            - cell "64 €" [ref=f3e60]
+            - cell "54 €" [ref=f3e61]
+      - paragraph [ref=f3e62]: "Ausnahme für alle Tarife: Die Kursauswahl gilt innerhalb deiner gebuchten Kurse und innerhalb der freien Plätze. Der Beitrag wird monatlich abgebucht, auch bei der 12-Monats-Variante; auf Wunsch ist eine Vorauszahlung von 4 oder 12 Monaten möglich."
+      - generic [ref=f3e63]:
+        - generic [ref=f3e64]:
+          - heading "Laufzeit & Kündigung" [level=3] [ref=f3e65]
+          - paragraph [ref=f3e66]: Mindestlaufzeit 4 oder 12 Monate. Danach verlängert sich der Vertrag monatlich und ist mit einem Monat Frist kündbar.
+        - generic [ref=f3e67]:
+          - heading "Pausieren" [level=3] [ref=f3e68]
+          - paragraph [ref=f3e69]: Bis zu zwei Mal pro Jahr, jeweils ein Monat. Der Beitrag pausiert und die Laufzeit verlängert sich um dieselbe Zeit.
+        - generic [ref=f3e70]:
+          - heading "Tarif ändern" [level=3] [ref=f3e71]
+          - paragraph [ref=f3e72]: Upgrade sofort, es wird nur die Differenz berechnet. Downgrade am Ende der Mindestlaufzeit.
+    - generic [ref=f3e73]:
+      - generic [ref=f3e75]:
+        - heading "Karten & Pässe" [level=2] [ref=f3e76]
+        - paragraph [ref=f3e77]: Ohne Vertrag. Die Gültigkeit beginnt immer beim ersten Besuch – nicht beim Kauf.
+      - generic [ref=f3e78]:
+        - article [ref=f3e79]:
+          - heading "8er Tanzkarte" [level=3] [ref=f3e80]
+          - generic [ref=f3e81]: 110 €
+          - paragraph [ref=f3e83]: 8 Termine, frei wählbar.
+          - generic [ref=f3e84]: Gültig 180 Tage ab erstem Besuch · Enddatum wird vor dem Kauf angezeigt
+        - article [ref=f3e85]:
+          - heading "10er Fitnesskarte" [level=3] [ref=f3e86]
+          - generic [ref=f3e87]: 100 €
+          - paragraph [ref=f3e89]: 10 Termine im Fitnessbereich.
+          - generic [ref=f3e90]: Gültig 180 Tage ab erstem Besuch
+        - article [ref=f3e91]:
+          - heading "Monatskarte" [level=3] [ref=f3e92]
+          - generic [ref=f3e93]: 54 €
+          - paragraph [ref=f3e95]: Ein Termin pro Woche.
+          - generic [ref=f3e96]: 31 Tage ab erstem Besuch · deckt auch Monate mit fünf Terminen ab
+        - article [ref=f3e97]:
+          - heading "Drop-in / Schnupper-Ticket" [level=3] [ref=f3e98]
+          - generic [ref=f3e99]: 15 €
+          - paragraph [ref=f3e101]: Ein fester Termin zum Kennenlernen.
+          - generic [ref=f3e102]: Verfällt am Kurstag; Verschiebung auf Anfrage möglich
+      - paragraph [ref=f3e103]: Karten sind nicht übertragbar und werden nicht in Geld zurückerstattet. Wenn du aus wichtigem Grund nicht weitermachen kannst, stellen wir auf Wunsch einen Gutschein aus.
+    - generic [ref=f3e104]:
+      - generic [ref=f3e106]:
+        - heading "Bezahlen" [level=2] [ref=f3e107]
+        - paragraph [ref=f3e108]: So wird der Beitrag eingezogen.
+      - generic [ref=f3e109]:
+        - generic [ref=f3e110]:
+          - heading "SEPA-Lastschrift" [level=3] [ref=f3e111]
+          - paragraph [ref=f3e112]: Du gibst dein Konto an und unterschreibst das Mandat. Der Beitrag wird monatlich eingezogen; jede Zahlung siehst du in deinem Konto mit Datum und Status.
+        - generic [ref=f3e113]:
+          - heading "Vor Ort" [level=3] [ref=f3e114]
+          - paragraph [ref=f3e115]: Barzahlung im Studio ist bei Kurskarten und Drop-in möglich. Die Zahlung wird als „offen“ vermerkt, bis sie quittiert ist.
+      - paragraph [ref=f3e116]: "Hinweis für die interne Umsetzung: Lastschrift läuft über SEPA-Datei mit dem Bankzugang oder über GoCardless; Kartenterminal folgt später."
+    - generic [ref=f3e117]:
+      - heading "Häufige Fragen" [level=2] [ref=f3e120]
+      - generic [ref=f3e121]:
+        - group [ref=f3e122]:
+          - generic "Kann ich vor Ablauf der Mindestlaufzeit kündigen?" [ref=f3e123] [cursor=pointer]
+          - paragraph [ref=f3e124]: Die vereinbarte Mindestlaufzeit gilt bis zum Ende. Danach ist die Kündigung jederzeit mit einem Monat Frist möglich.
+        - group [ref=f3e125]:
+          - generic "Was passiert bei einer Rücklastschrift?" [ref=f3e126] [cursor=pointer]
+        - group [ref=f3e127]:
+          - generic "Kann ich zwischen den Tarifen wechseln?" [ref=f3e128] [cursor=pointer]
+        - group [ref=f3e129]:
+          - generic "Zahlt ein Kurs im nächsten Monat fünf Termine?" [ref=f3e130] [cursor=pointer]
+  - contentinfo [ref=f3e132]:
+    - generic [ref=f3e133]:
+      - generic [ref=f3e134]:
+        - heading "Salsa y Sabor" [level=4] [ref=f3e135]
+        - paragraph [ref=f3e136]: "Adresse, Telefon und E-Mail: bestehende Angaben übernehmen"
+      - generic [ref=f3e137]:
+        - heading "Kurse" [level=4] [ref=f3e138]
+        - link "Alle Kurse" [ref=f3e139] [cursor=pointer]:
+          - /url: kurse.html
+        - link "Preise" [ref=f3e140] [cursor=pointer]:
+          - /url: preise.html
+        - link "Events" [ref=f3e141] [cursor=pointer]:
+          - /url: events.html
+      - generic [ref=f3e142]:
+        - heading "Rechtliches" [level=4] [ref=f3e143]
+        - link "Impressum" [ref=f3e144] [cursor=pointer]:
+          - /url: "#"
+        - link "AGB" [ref=f3e145] [cursor=pointer]:
+          - /url: "#"
+        - link "Datenschutz" [ref=f3e146] [cursor=pointer]:
+          - /url: "#"
+        - link "Widerruf" [ref=f3e147] [cursor=pointer]:
+          - /url: "#"
