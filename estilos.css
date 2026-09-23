@@ -414,3 +414,54 @@ label{color:var(--ink);font-size:15px}
   html{scroll-behavior:auto}
   *,*::before,*::after{transition:none !important;animation:none !important}
 }
+
+/* Ritmo suave · aprobado por el propietario · 23-09-2026. */
+@font-face{font-family:Outfit;src:url('fonts/Outfit.ttf') format('truetype');font-weight:100 900;font-display:swap}
+:root{--font-base:Outfit,system-ui,sans-serif;--line:rgba(17,17,17,.10);--shadow-hard:0 12px 32px rgba(90,38,25,.08);--shadow-soft:0 18px 38px rgba(90,38,25,.10)}
+.top{border:0;box-shadow:0 1px 0 var(--line);background:var(--cream)}
+.brand{font-family:Outfit,sans-serif;font-weight:650;letter-spacing:-.05em}
+.nav a:not(.btn){text-transform:none;letter-spacing:0;font-size:15px;font-weight:500}
+.btn{border:1px solid transparent;font-weight:600;letter-spacing:0;box-shadow:none}
+.btn.ghost{border-color:rgba(17,17,17,.22)}
+.card,.card.hard,.step{border:0;box-shadow:0 7px 28px rgba(90,38,25,.055)}
+.card.hard:hover{box-shadow:var(--shadow-soft)}
+.sec-head{border:0;padding-bottom:0;align-items:center}
+.sec-head .more{font-size:12px;letter-spacing:.06em}
+.ph-img,.cover-sm,.poster{border:0}
+.card h3,.step h3,.callout h3{text-transform:none;font-weight:600;letter-spacing:-.02em;font-size:21px}
+h1,h2{text-transform:none;font-weight:650;letter-spacing:-.04em;line-height:1.06}
+.tag{border:0;font-weight:500;letter-spacing:.03em;text-transform:none;font-size:12px}
+.price b{font-weight:650}
+.table{border:0;box-shadow:0 6px 26px rgba(90,38,25,.05)}
+.table thead th{background:var(--cream);color:var(--ink);border-bottom:1px solid var(--line)}
+.stage{border:0}.stage .inner{z-index:2}.stage .shapes{z-index:1}
+.band .card{border:0;background:rgba(255,255,255,.055)}
+.stripe{height:6px}.mobile-menu summary{border-color:var(--line)}
+.mobile-menu .nav{border-bottom:1px solid var(--line)}
+/* A · Ritmo suave: luz, formas orgánicas y una sans amable. */
+body.suave{--font-display:Outfit,sans-serif;--radius:30px;--radius-sm:21px;--radius-lg:32px}
+.suave .stage.photo{background:var(--cream);color:var(--ink);isolation:isolate;min-height:570px}
+.suave .stage.photo::after{content:"";position:absolute;right:max(4%,calc((100vw - 1140px)/2));top:38px;bottom:42px;width:41%;border-radius:220px 220px 100px 100px;z-index:0;background:url('img/hero-cortina.jpg') center/cover}
+.suave .stage.photo::before{content:"";position:absolute;right:3%;top:25%;height:290px;width:290px;background:var(--amber);border-radius:50%;opacity:.65}
+.suave .stage.photo .inner{padding-block:86px;min-height:570px}
+.suave .stage.photo h1{font-size:clamp(48px,6vw,82px);max-width:8ch;color:var(--red-ink);font-weight:600}
+.suave .stage.photo .inner-compact h1{font-size:var(--heading-page);max-width:48%;text-wrap:balance}
+.suave .stage.photo p{color:var(--muted);max-width:43%}
+.suave .stage.photo .kicker{color:var(--red-ink);letter-spacing:.17em}
+.suave .stage.photo .shapes{display:none}
+.suave .stage.photo .chips{max-width:48%;gap:7px;margin-top:24px}
+.suave .stage.photo .chip{background:rgba(255,255,255,.65);color:var(--ink);border:0;padding:7px 12px}
+.suave .stage.photo .chip b{color:var(--red-ink)}
+.suave .card .ph-img{border-radius:23px 23px 12px 12px}
+.suave .card{padding:16px 16px 24px}.suave .card > :not(.ph-img){margin-left:6px;margin-right:6px}
+.suave .stage.photo .btn:focus-visible{outline-color:var(--red-ink)}
+
+@media(max-width:800px){
+ .suave .stage.photo{padding-bottom:300px;min-height:0}
+ .suave .stage.photo::after{left:var(--pad);right:var(--pad);bottom:24px;top:auto;width:auto;height:290px;border-radius:140px 140px 30px 30px;background-position:center 42%}
+ .suave .stage.photo .inner{padding-block:42px;min-height:0}
+ .suave .stage.photo p,.suave .stage.photo .chips{max-width:100%}
+ .suave .stage.photo h1{max-width:100%;font-size:clamp(44px,10vw,66px)}
+ .suave .stage.photo .inner-compact h1{max-width:100%}
+ .suave .stage.photo::before{top:auto;bottom:12px;width:200px;height:200px}
+}
